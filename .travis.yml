@@ -1,0 +1,10 @@
+language: bash
+
+services:
+  - docker
+
+install:
+- docker build -t serval:test .
+
+script:
+- docker run serval:test
